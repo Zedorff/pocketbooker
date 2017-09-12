@@ -1,3 +1,67 @@
 <resources>
-    <string name="app_name">Kotlin</string>
+    <string name="app_name">YOBABOOKER</string>
+
+    <string name="category_food">Еда и напитки</string>
+    <string name="category_transport">Транспорт</string>
+    <string name="category_health">Красота и здоровье</string>
+    <string name="category_learning">Образование</string>
+    <string name="category_outfit">Одежда и обувь</string>
+    <string name="category_electronic">Электроника</string>
+    <string name="category_fun">Развлечения</string>
+    <string name="category_transfer_out">Перевод</string>
+
+    <string name="category_investments">Вложения</string>
+    <string name="category_salary">Зарплата</string>
+    <string name="category_reward">Вознаграждение</string>
+    <string name="category_gift">Подарок</string>
+    <string name="category_transfer_in">Перевод</string>
+
+    <array name="categories_outcome">
+        <item>@string/category_food</item>
+        <item>@string/category_health</item>
+        <item>@string/category_learning</item>
+        <item>@string/category_outfit</item>
+        <item>@string/category_fun</item>
+        <item>@string/category_electronic</item>
+        <item>@string/category_transport</item>
+        <item>@string/category_transfer_out</item>
+    </array>
+
+    <array name="categories_income">
+        <item>@string/category_investments</item>
+        <item>@string/category_salary</item>
+        <item>@string/category_reward</item>
+        <item>@string/category_gift</item>
+        <item>@string/category_transfer_in</item>
+    </array>
+
+    <array name="accounts">
+        <item>Наличные</item>
+        <item>Карта</item>
+        <item>Сбережения</item>
+    </array>
+
+    <integer-array name="account_icons">
+        <item>@drawable/ic_account_cash</item>
+        <item>@drawable/ic_account</item>
+        <item>@drawable/ic_account_savings</item>
+    </integer-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="dialog_transaction_title_outcome">Новый расход</string>
+    <string name="dialog_transaction_title_income">Новый доход</string>
+    <string name="dialog_transaction_input_cost">Укажите сумму</string>
+
+    <string name="dialog_account_title">Новый счет</string>
+    <string name="dialog_account_name">Название счета</string>
+
+    <string name="dialog_transfer_title">Новый перевод</string>
+    <string name="dialog_transfer_transaction_name">Перевод</string>
+
+    <string name="dialog_input_description">Описание</string>
+    <string name="dialog_add_text">Добавить</string>
+    <string name="dialog_negative_text">Отменить</string>
 </resources>

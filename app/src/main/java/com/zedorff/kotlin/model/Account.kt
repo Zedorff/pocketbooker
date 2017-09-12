@@ -1,19 +1,19 @@
 package com.zedorff.kotlin.model
 
+import io.realm.RealmList
 import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 import java.util.*
 
-
-open class Category : RealmObject {
+open class Account: RealmObject {
 
     companion object {
-        var ID = "id"
         var NAME = "name"
         var TYPE = "type"
 
-        var INCOME = 0
-        var OUTCOME = 1
+        var CASH = 0
+        var CARD = 1
+        var SAVINGS = 2
     }
 
     @PrimaryKey
@@ -21,8 +21,9 @@ open class Category : RealmObject {
 
     lateinit var name: String
     var type: Int = 0
+    var transactions: RealmList<Transaction> = RealmList()
 
-    constructor(name: String, type: Int) : super() {
+    constructor(name: String, type: Int) {
         this.name = name
         this.type = type
     }
